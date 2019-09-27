@@ -15,7 +15,9 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'sudo apt-get install -y ripgrep'
+    script: |
+      curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
+      sudo dpkg -i ripgrep_11.0.2_amd64.deb
 - task: AzureCLI@2
   displayName: Update MI information
   inputs:
