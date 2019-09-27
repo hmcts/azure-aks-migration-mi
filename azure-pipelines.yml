@@ -1,6 +1,13 @@
 trigger:
 - master
 
+schedules:
+- cron: "0 0 17 ? * MON-FRI *" # 5pm every week day
+  displayName: "Daily update" # friendly name given to a specific schedule
+  branches:
+    include:
+      - master 
+
 pool:
   vmImage: 'ubuntu-latest'
 
