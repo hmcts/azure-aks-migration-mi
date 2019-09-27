@@ -1,5 +1,6 @@
 *.txt
 *.csv
+cnp-flux-config/
 
 #
 # Logs
