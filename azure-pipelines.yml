@@ -2,7 +2,7 @@ trigger:
 - master
 
 schedules:
-- cron: "0 0 17 ? * MON-FRI *" # 5pm every week day
+- cron: "0 0 17 1/1 * ? *" # 5pm every day
   displayName: "Daily update" # friendly name given to a specific schedule
   branches:
     include:
