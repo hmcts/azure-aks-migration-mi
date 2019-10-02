@@ -6,7 +6,8 @@ schedules:
   displayName: "Daily update" # friendly name given to a specific schedule
   branches:
     include:
-      - master 
+      - master
+  always: 'true'
 
 pool:
   vmImage: 'ubuntu-latest'
