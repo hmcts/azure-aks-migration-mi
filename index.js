@@ -53,6 +53,7 @@ const frontendApps = [
     'ccd-api-gateway-web',
     'ccd-case-management-web',
     'ccd-case-print-service',
+    'ccd-case-activity-api',
     'ccpay-bubble-frontend',
     'cmc-citizen-frontend',
     'cmc-legal-frontend',
