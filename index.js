@@ -30,7 +30,7 @@ const productMapping = {
     'jui': 'professional-apps',
     'pui': 'professional-apps',
     'xui': 'professional-apps',
-    'coh': 'professional-apps',
+    'coh': 'evidence',
     'rpa': 'professional-apps',
     'rpx': 'professional-apps',
     'ref': 'professional-apps',
