@@ -8,7 +8,7 @@ az webapp list --subscription DCD-CNP-PROD --query '[].name' -o tsv | sort | sed
 rm -rf cnp-flux-config/
 git clone --depth 1 https://github.com/hmcts/cnp-flux-config.git
 
-rg --no-line-number --no-heading  --no-filename "releaseName: (.*)" -r '$1' cnp-flux-config/k8s/prod/common | awk '{$1=$1};1' > aks-apps.txt
+rg --no-line-number --no-heading  --no-filename "releaseName: (.*)" -r '$1' cnp-flux-config/k8s/prod/common cnp-flux-config/k8s/prod/cluster-00 cnp-flux-config/k8s/prod/cluster-01 | awk '{$1=$1};1' | uniq > aks-apps.txt
 rm -rf cnp-flux-config/
 
 ##### Create merged file ####
